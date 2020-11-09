@@ -3,7 +3,7 @@ name: Build and deploy Auswertung to S3
 on:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   build-and-deploy:
