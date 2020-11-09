@@ -25,9 +25,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-      run: npm install
-      run: npm lint
-      run: npm build
+    - run: npm install
+    - run: npm lint
+    - run: npm build
 
     - name: Synchronize with s3
       uses: jakejarvis/s3-sync-action@master
