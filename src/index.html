@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>CoP-DEV Auswertung</title>
+</head>
+
+<body>
+  <button class="auswertungs-button" data-google-login-button>Um die Ergebnisse zu sehen musst Du Dich hier einloggen </button>
+  <div class="auswertung-content">
+    <div class="download">
+      <button class="auswertungs-button" data-download>Präsentation Herunterladen</button>
+    </div>
+
+    <h2>Bevorzugtes Paradigma</h2>
+    Welches würdest Du als Dein bevorzugtes Paradigma bezeichnen? <br />
+    (Einfachauswahl; 14 Stimmen)
+
+    <div id="paradigma" class="flex"></div>
+    <h2>Technologien</h2>
+    Wie bewertest Du folgende Technologien? <br />
+    (Auswählbar pro Punkt: "Dafür interessiere ich mich", "Das könnte für
+    (zukünftige) Kunden interessant sein", "Ich
+    bin
+    routiniert damit umzugehen/Ich beherrsche das Thema", 9 Stimmen)
+    <div id="technologien" class="flex"></div>
+
+    <h2>Sprachen</h2>
+    Wie würdest Du folgende Auszeichnungs- und Programmiersprachen bewerten?
+    <br />
+    (Auswählbar pro Punkt: "Dafür interessiere ich mich", "Das könnte für
+    (zukünftige) Kunden interessant sein", "Ich
+    bin
+    routiniert damit umzugehen/Ich beherrsche das Thema", 9 Stimmen)
+    <div id="sprachen" class=flex></div>
+
+    <h2>Frameworks</h2>
+    Wie würdest Du folgende Frameworks bewerten? <br />
+    (Auswählbar pro Punkt: "Dafür interessiere ich mich", "Das könnte für
+    (zukünftige) Kunden interessant sein", "Ich
+    bin
+    routiniert damit umzugehen/Ich beherrsche das Thema", 9 Stimmen)
+    <div id="frameworks" class=flex></div>
+
+    <h2>Domänenexploration</h2>
+    Wie würdest Du folgende Methoden zur Domänenexploration bewerten? <br />
+    (Auswählbar pro Punkt: "Dafür interessiere ich mich", "Das könnte für
+    (zukünftige) Kunden interessant sein", "Ich
+    bin
+    routiniert damit umzugehen/Ich beherrsche das Thema", 9 Stimmen)
+    <div id="domex" class=flex></div>
+
+    <h2>Lernmethoden</h2>
+    Ordne folgende Lernmethoden. Deine Präferenzen sollen dabei oben stehen.
+    (Konzentriere Dich auf die wichtigsten
+    fünf)
+    <br />
+    (9 Stimmen) Eigene Eingaben möglich; Bewertung nach Gewichtung:
+    <ul>
+      <li>Platz 1: 5 Punkte</li>
+      <li>Platz 2: 4 Punkte</li>
+      <li>Platz 3: 3 Punkte</li>
+      <li>Platz 4: 2 Punkte</li>
+      <li>Platz 5: 1 Punkt</li>
+    </ul>
+    <div id="lernmethoden" class="button-flex">
+      <div class="button-container">
+        <button class="auswertungs-button withRange">Nach Rangfolge</button>
+        <button class="auswertungs-button withoutRange">Nach Stimmen</button>
+      </div>
+    </div>
+
+    <h2>Andere Skills</h2>
+    Welche der folgenden anderen Skills sind Dir bei Softwareentwicklern
+    besonders wichtig? (Wähle maximal fünf) <br />
+    (Mehrfachauswahl, maximal fünf auswählbar; 9 Stimmen)
+    <div id="otherskills" class=flex></div>
+
+    <h2>Themen für die CoP-DEV</h2>
+    Wähle maximal drei Themen, über die Du Dich gern in der CoP-dev unterhalten
+    würdest. <br />
+    (Mehrfachauswahl, maximal drei auswählbar; Eigene Eingabe möglich; 9
+    Stimmen)
+    <div id="copdev" class=flex></div>
+
+    <h2>Hindernisse</h2>
+    Wähle die fünf für Dich größten Hindernisse und ordne sie von oben nach
+    unten an (die restlichen Punkte musst Du
+    nicht
+    anordnen). <br />
+    (9 Stimmen) Bewertung nach Gewichtung:
+    <ul>
+      <li>Platz 1: 5 Punkte</li>
+      <li>Platz 2: 4 Punkte</li>
+      <li>Platz 3: 3 Punkte</li>
+      <li>Platz 4: 2 Punkte</li>
+      <li>Platz 5: 1 Punkt</li>
+    </ul>
+    <div id="hindernisse" class="button-flex">
+      <div class="button-container">
+        <button class="auswertungs-button withRange">Nach Rangfolge</button>
+        <button class="auswertungs-button withoutRange">Nach Stimmen</button>
+      </div>
+    </div>
+
+    <h2>Antrieb</h2>
+    Was treibt Dich bei Deiner täglichen Arbeit am meisten an? Wähle zwei Punkte
+    aus. <br />
+    (Mehrfachauswahl, maximal zwei auswählbar; 9 Stimmen)
+    <div id="antrieb" class=flex></div>
+
+    <h2>Die Erwartungen an die CoP-DEV</h2>
+    Was sind Deine Erwartungen an die CoP-dev? Was können wir tun, um sie noch
+    besser zu machen? <br />
+    (Freitext)
+    <div class="speechbubbles">
+      <img src="./assets/images/impuls.svg"></img>
+      <img src='./assets/images/kompetenzen.svg'></img>
+      <img src='./assets/images/loesung.svg'></img>
+      <img src='./assets/images/nachdenken.svg'></img>
+      <img src='./assets/images/vorbereitung.svg'></img>
+      <img src='./assets/images/copoe.svg'></img>
+      <img src='./assets/images/aufmerksamkeit.svg'></img>
+    </div>
+  </div>
+</body>
+
+</html>
