@@ -8,6 +8,8 @@ import auswertungsfetcher from './scripts/auswertungsfetcher'
 
 import './styles/style.scss'
 
+let alreadyLoaded = false
+
 const loadCharts = () => {
   const fetcher = auswertungsfetcher()
 
@@ -24,6 +26,7 @@ const loadCharts = () => {
 
   document.querySelector('[data-google-login-button]').className += ' hide'
   document.querySelector('.auswertung-content').className += ' loaded'
+  alreadyLoaded = true
 }
 
 const authFlow = (user) => {
@@ -35,7 +38,7 @@ const authFlow = (user) => {
       .then(storeData)
       .then(loadCharts)
       .catch(error => console.error('error', error))
-  } else {
+  } else if (!alreadyLoaded) {
     loadCharts()
   }
 }
